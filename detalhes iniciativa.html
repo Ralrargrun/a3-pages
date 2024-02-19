@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhes Iniciativa</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css"> -->
+    <!-- <link href="https://cdn.datatables.net/2.0.0/css/dataTables.bootstrap5.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="https://cdn.datatables.net/2.0.0/css/dataTables.dataTables.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+    
+
+    <link href="https://cdn.datatables.net/searchbuilder/1.7.0/css/searchBuilder.bulma.css" rel="stylesheet">
+    <link href="https://cdn.datatables.net/responsive/3.0.0/css/responsive.bulma.css" rel="stylesheet">
+    <link href="https://cdn.datatables.net/datetime/1.5.2/css/dataTables.dateTime.min.css" rel="stylesheet">
+    <link href="https://cdn.datatables.net/buttons/3.0.0/css/buttons.bulma.css" rel="stylesheet">
+    <link href="https://cdn.datatables.net/2.0.0/css/dataTables.bulma.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-calendar@6.1.19/dist/css/bulma-calendar.min.css">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"> -->
+    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="table.css">
+</head>
+<body>
+
+
+    <div style="margin-left:20px;margin-right:20px;margin-top: 20px;">
+        <!-- <div class="tile">
+            <div class="tile is-parent is-vertical">
+              <article class="tile is-child notification is-primary" style="display: inline-flex;background-color: #212121 !important; padding-left: 0px !important;padding-top: 0px !important;padding-bottom: 0px !important;">
+                <div>
+                    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
+                    <dotlottie-player src="https://lottie.host/0338dd3d-6402-4371-bfe4-b6f58675db70/4c1b6OaM8i.json" background="transparent" speed="1" style="width: 200px; height: 200px;" autoplay></dotlottie-player>    
+                </div>
+                <div style="display: flex; flex-direction: column; justify-content: center;margin-top: -10px;">
+                    <input class="date" type="text" placeholder="Text input">
+                    <input class="date" type="text" placeholder="Text input">
+                   <p>• teste</p>
+                   <p>• teste</p>
+                   <p>• teste</p>
+                </div>
+                
+              </article>
+            </div>
+        </div> -->
+    </div>
+
+    
+    <div class="card" style="margin-top:20px;margin-right:150px;margin-left:150px;">
+    
+        <header class="card-header">
+            <div class="row justify-content-start" style="width: 100%;">
+                <div class="col-4">
+                </div>
+                <div class="col-4">
+                    <p class="card-header-title" style="justify-content: center;padding: 0px !important;">
+                        <img src="info_FILL0_wght400_GRAD0_opsz24.svg" style="height: 22px;margin-right:10px">
+                        Detalhes Iniciativa XXXXXXX
+                    </p>
+                </div>
+                <div class="col-4" style="display:flex;justify-content: end !important;padding: 0px;">
+                    <a href="#"><span class="tag is-warning" style="margin-right:10px">Editar<img src="edit_FILL0_wght400_GRAD0_opsz24.svg" style="margin-left: 5px;height:12px;"></span></a>
+                    <a href="#"><span class="tag is-danger"><strong>Editar Restrito</strong><img src="lock_open_right_FILL0_wght400_GRAD0_opsz24.svg" style="margin-left: 5px;height:12px;"></span></a>
+                </div>
+            </div>
+        </header>
+
+        <div class="card-content">    
+            <div class="row justify-content-start" style="margin-top: 20px;">
+                <div class="col-3">
+                    <label for="id" class="form-label">ID</label>
+                    <input class="input" id="id" type="text" value="This text is readonly" readonly>
+                </div>
+                <div class="col-2">
+                    <label for="sigla" class="form-label">Sigla</label>
+                    <input class="input" id="sigla" type="text" value="A0" readonly>
+                </div>
+                <div class="col-3">
+                    <label for="alavanca" class="form-label">Alavanca</label>
+                    <input class="input" id="alavanca" type="text" value="This text is readonly" readonly>
+                </div>
+                <div class="col-4">
+                    <label for="comunidade" class="form-label">Comunidade</label>
+                    <input class="input" id="comunidade" type="text" value="This text is readonly" readonly>
+                </div>
+            </div>
+            <div class="row justify-content-start" style="margin-top: 20px;">
+                <div class="col-4">
+                    <label for="titulo" class="form-label">Titulo</label>
+                    <input class="input" id="titulo" type="text" value="This text is readonly" readonly>
+                </div>
+                <div class="col-8">
+                    <label for="release_train" class="form-label">Release Train</label>
+                    <input class="input" id="release_train" type="text" value="This text is readonly" readonly>
+                </div>
+            </div>
+            <div class="row justify-content-start" style="margin-top: 20px;">
+                <div class="col-4">
+                    <label for="iniciativa" class="form-label">Iniciativa (IN)</label>
+                    <input class="input" id="iniciativa" type="text" value="This text is readonly" readonly>
+                </div>
+                <div class="col-3">
+                    <label for="tipo_iniativa" class="form-label">Tipo de Iniciativa</label>
+                    <input class="input" id="tipo_iniativa" type="text" value="This text is readonly" readonly>
+                </div>
+                <div class="col-2">
+                    <label for="data_criacao" class="form-label">Data de Criação</label>
+                    <input class="input" id="data_criacao" type="text" value="This text is readonly" readonly>
+                </div>
+                <div class="col-3">
+                    <label for="data_implantacao" class="form-label">Data de Implantação</label>
+                    <input class="input" id="data_implantacao" type="text" value="This text is readonly" readonly>
+                </div>
+            </div>
+            <div class="row justify-content-start" style="margin-top: 20px;">
+                <div class="col-4">
+                    <label for="tipo_processamento" class="form-label">Tipo Processamento</label>
+                    <input class="input" id="tipo_processamento" type="text" value="This text is readonly" readonly>
+                </div>
+                <div class="col-2">
+                    <label for="ambiente" class="form-label">Ambiente</label>
+                    <input class="input" id="ambiente" type="text" value="This text is readonly" readonly>
+                </div>
+                <div class="col-2">
+                    <label for="autocontido" class="form-label">Auto-Contido</label>
+                    <input class="input" id="autocontido" type="text" value="This text is readonly" readonly>
+                </div>
+                <div class="col-4">
+                    <label for="servico_negocio" class="form-label">Serviço de Negócio</label>
+                    <input class="input" id="servico_negocio" type="text" value="This text is readonly" readonly>
+                </div>
+            </div>
+            <div class="row justify-content-start" style="margin-top: 20px;">
+                <div class="col-12">
+                    <label for="exampleFormControlTextarea1" class="form-label">Descrição</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" readonly>hsaudusahd hsaudhuasd haushd usahdu</textarea>
+                </div>    
+            </div>
+            <div class="row justify-content-start" style="margin-top: 20px;">
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                      <strong>Responsável</strong>
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <div class="row justify-content-start" style="margin-top: 20px;margin-bottom: 20px;">
+                            <div class="col-4">
+                                <label for="criador" class="form-label">Criado por:</label>
+                                <input class="input" id="criador" type="text" value="This text is readonly" readonly>
+                            </div>
+                            <div class="col-4">
+                                <label for="responsavel" class="form-label">Responsável Implantação:</label>
+                                <input class="input" id="responsavel" type="text" value="This text is readonly" readonly>
+                            </div>
+                            <div class="col-4">
+                                <label for="recomendado" class="form-label">Recomendado Por:</label>
+                                <input class="input" id="recomendado" type="text" value="This text is readonly" readonly>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        <strong>Métricas</strong>
+                      </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        <div class="row justify-content-start" style="margin-top: 20px;margin-bottom: 20px;">
+                            <div class="col-3">
+                                <label for="farol" class="form-label">Farol de Entrega</label>
+                                <input class="input" id="farol" type="text" value="This text is readonly" readonly>
+                            </div>
+                            <div class="col-3">
+                                <label for="status" class="form-label">Status</label>
+                                <input class="input" id="status" type="text" value="This text is readonly" readonly>
+                            </div>
+                            <div class="col-3">
+                                <label for="estimativa" class="form-label">Estimativa Redução de MIPS</label>
+                                <input class="input" id="estimativa" type="text" value="This text is readonly" readonly>
+                            </div>
+                            <div class="col-3">
+                                <label for="servico_negocio" class="form-label">Serviço de Negócio</label>
+                                <input class="input" id="servico_negocio" type="text" value="This text is readonly" readonly>
+                            </div>
+                        </div>
+                        <div class="row justify-content-start" style="margin-bottom: 20px;">
+                            <div class="col-4">
+                                <label for="custo_evitado" class="form-label">Custo Evitado/Ano</label>
+                                <input class="input" id="custo_evitado" type="text" value="This text is readonly" readonly>
+                            </div>
+                            <div class="col-4">
+                                <label for="mips_reduzido" class="form-label">MIPS Reduzido Online</label>
+                                <input class="input" id="mips_reduzido" type="text" value="This text is readonly" readonly>
+                            </div>
+                            <div class="col-4">
+                                <label for="horas" class="form-label">Horas</label>
+                                <input class="input" id="horas" type="text" value="This text is readonly" readonly>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        <strong>Objetos</strong>
+                    </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        
+                        <!-- <div class="card" style="margin:0px;">
+    
+                            <header class="card-header">
+                                <p class="card-header-title" style="justify-content: center;padding: 0px !important;">
+                                    Objetos
+                                </p>
+                            </header>
+                    
+                            <div class="card-content">  -->
+                                <table id="example" class="table is-striped nowrap" style="width:100%">
+                                    <thead>
+                                        <tr>
+                                            <th>Name</th>
+                                            <th>Position</th>
+                                            <th>Office</th>
+                                            <th>Age</th>
+                                            <th>Start date</th>
+                                            <th>Salary</th>
+                                            <th>Office</th>
+                                            <th>Age</th>
+                                            <th>Start date</th>
+                                            <th>Salary</th>
+                                            <th>Office</th>
+                                            <th>Age</th>
+                                            <th>Start date</th>
+                                            <th>Salary</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Tiger Nixon</td>
+                                            <td>System Architect</td>
+                                            <td>Edinburgh</td>
+                                            <td>61</td>
+                                            <td>2011-04-25</td>
+                                            <td>$320,800<td>Edinburgh</td>
+                                            <td>61</td>
+                                            <td>2011-04-25</td>
+                                            <td>$320,800<td>Edinburgh</td>
+                                            <td>61</td>
+                                            <td>2011-04-25</td>
+                                            <td>$320,800</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Garrett Winters</td>
+                                            <td>Accountant</td>
+                                            <td>Tokyo</td>
+                                            <td>63</td>
+                                            <td>2011-07-25</td>
+                                            <td>$170,750<td>Edinburgh</td>
+                                            <td>61</td>
+                                            <td>2011-04-25</td>
+                                            <td>$320,800<td>Edinburgh</td>
+                                            <td>61</td>
+                                            <td>2011-04-25</td>
+                                            <td>$320,800</td>
+                                        </tr>
+                                    </tbody>
+                                    <tfoot>
+                                        <tr>
+                                            <th>Name</th>
+                                            <th>Position</th>
+                                            <th>Office</th>
+                                            <th>Age</th>
+                                            <th>Start date</th>
+                                            <th>Salary</th>
+                                            <th>Office</th>
+                                            <th>Age</th>
+                                            <th>Start date</th>
+                                            <th>Salary</th>
+                                            <th>Office</th>
+                                            <th>Age</th>
+                                            <th>Start date</th>
+                                            <th>Salary</th>
+                                        </tr>
+                                    </tfoot>
+                                </table>    
+                            <!-- </div>
+                        </div> -->
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapseThree">
+                        <strong>Detalhes</strong>
+                      </button>
+                    </h2>
+                    <div id="collapse4" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        <div class="row justify-content-start" style="margin-top: 20px;">
+                            <div class="col-4">
+                                <label for="impedimentos" class="form-label">Impedimentos, Risco, Ajuda e Dependência</label>
+                                <textarea class="form-control" id="impedimentos" rows="3" readonly>hsaudusahd hsaudhuasd haushd usahdu</textarea>
+                            </div>    
+                            <div class="col-4">
+                                <label for="ultima_atualizacao" class="form-label">Última Atualização</label>
+                                <textarea class="form-control" id="ultima_atualizacao" rows="3" readonly>hsaudusahd hsaudhuasd haushd usahdu</textarea>
+                            </div>   
+                            <div class="col-4">
+                                <label for="observacao" class="form-label">Observação (Uso Interno)</label>
+                                <textarea class="form-control" id="observacao" rows="3" readonly>hsaudusahd hsaudhuasd haushd usahdu</textarea>
+                            </div>  
+                        </div>
+                        <div class="row justify-content-start" style="margin-top: 20px;">
+                            <div class="col-4">
+                                <label for="campo1" class="form-label">Campo 1</label>
+                                <textarea class="form-control" id="campo1" rows="3" readonly>hsaudusahd hsaudhuasd haushd usahdu</textarea>
+                            </div>    
+                            <div class="col-4">
+                                <label for="campo2" class="form-label">Campo 2</label>
+                                <textarea class="form-control" id="campo2" rows="3" readonly>hsaudusahd hsaudhuasd haushd usahdu</textarea>
+                            </div>    
+                            <div class="col-4">
+                                <label for="campo3" class="form-label">Campo 3</label>
+                                <textarea class="form-control" id="campo3" rows="3" readonly>hsaudusahd hsaudhuasd haushd usahdu</textarea>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script> -->
+    <script src="https://cdn.datatables.net/2.0.0/js/dataTables.js"></script>
+    <script src="https://cdn.datatables.net/2.0.0/js/dataTables.bulma.js"></script>
+
+    <script src="https://cdn.datatables.net/buttons/3.0.0/js/dataTables.buttons.js"></script>
+    <script src="https://cdn.datatables.net/buttons/3.0.0/js/buttons.bulma.js"></script>
+
+    <script src="https://cdn.datatables.net/searchbuilder/1.7.0/js/dataTables.searchBuilder.js"></script>
+    <script src="https://cdn.datatables.net/searchbuilder/1.7.0/js/searchBuilder.bulma.js"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/moment@2.30.1/moment.min.js"></script>
+    <script src="https://cdn.datatables.net/datetime/1.5.2/js/dataTables.dateTime.min.js"></script>
+
+    <script src="https://cdn.datatables.net/responsive/3.0.0/js/dataTables.responsive.js"></script>
+
+    <script src="https://cdn.datatables.net/responsive/3.0.0/js/responsive.bulma.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bulma-calendar@6.1.19/dist/js/bulma-calendar.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script> -->
+    <script src="detalhe.js"></script>
+</body>
+</html>

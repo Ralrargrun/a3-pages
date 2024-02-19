@@ -1,0 +1,17 @@
+html, body {
+    margin: 0;            /* Remove margens padrão */
+    padding: 0;           /* Remove espaçamento interno padrão */
+    background-color: #f0f0f0; /* Cor de fundo cinza claro */
+    color: #333333;           /* Cor do texto cinza escuro */
+    font-family: Arial, sans-serif; /* Fonte Arial, com fallback para sans-serif */
+}
+
+.dataTables_filter {
+    display: none;
+}
+
+
+.card-content {
+    padding-top: 0px !important;
+    padding: 1.5rem;
+}
